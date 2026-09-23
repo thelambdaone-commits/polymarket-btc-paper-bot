@@ -1,0 +1,17 @@
+{
+  "name": "paper-prediction-bot",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/main.js",
+    "test": "node --test",
+    "check": "node --check src/main.js",
+    "backtest": "node scripts/backtest.js",
+    "analyze": "node scripts/analyze-calibration.js",
+    "export-metrics": "node scripts/export-metrics.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
